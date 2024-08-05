@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/happyLogo.jpeg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#mortgage-calculator">Mortgage Calculator</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="intro">
+        <div class="slider">
+            <div class="active">
+                <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Real Estate 1">
+                <h1>Welcome to Our Real Estate Website</h1>
+                <p>Your journey to finding the perfect home starts here.</p>
+            </div>
+            <div>
+                <img src="https://plus.unsplash.com/premium_photo-1661963209358-0f4d5f509d10?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Real Estate 2">
+                <h1>Luxury Properties</h1>
+                <p>Experience the finest living</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1697686957280-2466e1e43ba7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Real Estate 3">
+                <h1>Commercial Spaces</h1>
+                <p>Perfect locations for your business</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1707623988408-ab88c9981730?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Real Estate 4">
+                <h1>Find Your Dream Home</h1>
+                <p>We help you find the perfect place</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider div');
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+                if (i === index) {
+                    slide.style.animation = 'fadeIn 1s';
+                } else {
+                    slide.style.animation = 'none';
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Optional: Auto slide every 5 seconds
+        setInterval(nextSlide, 5000);
+    </script>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are a dedicated real estate company committed to helping you find your dream home. With years of experience in the industry, we offer unparalleled service and expertise.</p>
+    <div class="about-content">
+        <div class="about-box">
+            <img src="https://images.unsplash.com/photo-1698795635695-29fd61f60edd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Our Mission">
+            <h3>Our Mission</h3>
+            <p>Our mission is to provide exceptional real estate services, ensuring our clients find the perfect property that meets their needs and exceeds their expectations.</p>
+        </div>
+        <div class="about-box">
+            <img src="https://plus.unsplash.com/premium_photo-1661315492902-528b6230a937?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Our Vision">
+            <h3>Our Vision</h3>
+            <p>We envision a future where finding and purchasing a property is a seamless and enjoyable experience, supported by our innovative solutions and dedicated team.</p>
+        </div>
+        <div class="about-box">
+            <img src="https://images.unsplash.com/photo-1501621667575-af81f1f0bacc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Our Values">
+            <h3>Our Values</h3>
+            <p>Integrity, excellence, and client satisfaction are at the heart of our values. We strive to build lasting relationships based on trust and transparency.</p>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Basic Mortgage Calculator -->
+   <section id="mortgage-calculator" class="calculator">
+    <h2>Mortgage Calculator</h2>
+    <form id="mortgage-form">
+        <label for="loan-amount">Loan Amount (£):</label>
+        <input type="number" id="loan-amount" required>
+        
+        <label for="interest-rate">Interest Rate (%):</label>
+        <input type="number" id="interest-rate" step="0.01" required>
+        
+        <label for="loan-term">Loan Term (Years):</label>
+        <input type="number" id="loan-term" required>
+        
+        <button type="button" onclick="calculateMortgage()">Calculate</button>
+    </form>
+    <div id="result">
+        <h3>Estimated Monthly Payment:</h3>
+        <p id="monthly-payment">£0.00</p>
+    </div>
+
+
+    <!-- Affordability Calculator -->
+<section id="affordability-calculator" class="calculator">
+    <h2>Affordability Calculator</h2>
+    <form id="affordability-form">
+        <label for="income">Annual Income:</label>
+        <input type="number" id="income" placeholder="Enter annual income" required>
+        
+        <label for="debts">Monthly Debts:</label>
+        <input type="number" id="debts" placeholder="Enter monthly debts" required>
+        
+        <label for="downPayment">Down Payment:</label>
+        <input type="number" id="downPayment" placeholder="Enter down payment" required>
+        
+        <label for="interestRateAfford">Interest Rate (%):</label>
+        <input type="number" id="interestRateAfford" step="0.01" placeholder="Enter interest rate" required>
+        
+        <label for="loanTermAfford">Loan Term (years):</label>
+        <input type="number" id="loanTermAfford" placeholder="Enter loan term" required>
+        
+        <button type="button" onclick="calculateAffordability()">Calculate</button>
+    </form>
+    <div id="result">
+        <h3>Maximum Affordable Home Price:</h3>
+        <p id="affordablePrice">£0.00</p>
+    </div>
+</section>
+<!-- Amortization Calculator -->
+<section id="amortization-calculator" class="calculator">
+    <h2>Amortization Calculator</h2>
+    <form id="amortization-form">
+        <label for="loanAmountAmort">Loan Amount (£):</label>
+        <input type="number" id="loanAmountAmort" placeholder="Enter loan amount" required>
+        
+        <label for="interestRateAmort">Interest Rate (%):</label>
+        <input type="number" id="interestRateAmort" step="0.01" placeholder="Enter interest rate" required>
+        
+        <label for="loanTermAmort">Loan Term (years):</label>
+        <input type="number" id="loanTermAmort" placeholder="Enter loan term" required>
+        
+        <button type="button" onclick="calculateAmortization()">Calculate</button>
+    </form>
+    <div id="result">
+        <h3>Monthly Payment:</h3>
+        <p id="monthlyPaymentAmort">£0.00</p>
+        <h3>Amortization Schedule:</h3>
+        <table id="amortizationTable">
+            <tr>
+                <th>Month</th>
+                <th>Principal</th>
+                <th>Interest</th>
+                <th>Balance</th>
+            </tr>
+        </table>
+    </div>
+</section>
+
+</section>
+
+
+
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://plus.unsplash.com/premium_photo-1661963209358-0f4d5f509d10?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern House 2">
+            <img src="https://images.unsplash.com/photo-1697686957280-2466e1e43ba7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern House 3">
+            <img src="https://images.unsplash.com/photo-1707623988408-ab88c9981730?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern House 4">
+            <img src="https://images.unsplash.com/flagged/photo-1556438758-df7b9e0c0fe4?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern House 5">
+            <img src="https://images.unsplash.com/photo-1590291127093-24b2232c51ec?q=80&w=1957&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern House 6">
+            <img src="https://plus.unsplash.com/premium_photo-1661773968831-22d46e01bc50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern House 7">
+            <img src="https://images.unsplash.com/photo-1648631478953-1334ce24a24c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern House 8">
+            <img src="https://images.unsplash.com/photo-1522050212171-61b01dd24579?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern House 9">
+            <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern House 10">
+            <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern House 11">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=2054&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern House 12">
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <p>"The team was fantastic! They helped us find our dream home and were incredibly supportive throughout the entire process."</p>
+            <h3>- Jane Doe</h3>
+        </div>
+        <div class="testimonial">
+            <p>"Excellent service and great attention to detail. We couldn't be happier with our new home."</p>
+            <h3>- John Smith</h3>
+        </div>
+        <div class="testimonial">
+            <p>"A professional and dedicated team that made buying a home a smooth and enjoyable experience."</p>
+            <h3>- Emily Johnson</h3>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What is the process of buying a home?</h3>
+            <p>Our team will guide you through every step, from initial consultation to closing the deal. We'll help you find the right property, negotiate terms, and handle all the paperwork.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I get pre-approved for a mortgage?</h3>
+            <p>You can get pre-approved by contacting a mortgage lender. They'll review your financial situation and provide you with a pre-approval letter, which will help you understand how much you can afford.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What should I look for in a home?</h3>
+            <p>Consider your needs and preferences, such as location, size, layout, and condition of the property. Our agents can help you identify properties that meet your criteria and arrange viewings.</p>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2>Blog</h2>
+        <article>
+            <h3>The Importance of Home Inspections</h3>
+            <p>Home inspections are a crucial step in the buying process. Learn why they're important and what to look for during an inspection.</p>
+            <a href="#">Read More</a>
+        </article>
+        <article>
+            <h3>Tips for First-Time Home Buyers</h3>
+            <p>Buying your first home can be overwhelming. Check out our tips to make the process smoother and less stressful.</p>
+            <a href="#">Read More</a>
+        </article>
+        <article>
+            <h3>Understanding the Mortgage Process</h3>
+            <p>Getting a mortgage can be complex. Our guide will help you understand the steps involved and what to expect.</p>
+            <a href="#">Read More</a>
+        </article>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-image">
+                <h2> Hello client <h2>
+                <img src="https://plus.unsplash.com/premium_photo-1682125235036-d1ab54136ff4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Contact Us Image">
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="your-server-endpoint" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="property-type">Property Type:</label>
+                        <select id="property-type" name="property-type" required>
+                            <option value="" disabled selected>Select a property type</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="land">Land</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#mortgage-calculator">Mortgage Calculator</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p>Email: info@realestatecompany.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>123 Real Estate St, City, Country</p>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2024 Real Estate Company. All rights reserved.</p>
+    </footer>
+    
+    <!-- Add Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
