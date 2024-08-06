@@ -4,8 +4,8 @@ Welcome to my GitHub profile! I'm a passionate software developer and technology
 
 ## 🔧 Technologies & Tools
 
-- **Languages:** JavaScript, Python, PHP, Java, C++
-- **Web Development:** HTML, CSS, React, Angular, Node.js, Express.js
+- **Languages:** JavaScript, Python, PHP,  
+- **Web Development:** HTML, CSS, React, Next.js Node.js, Express.js
 - **Databases:** MySQL, MongoDB, PostgreSQL
 - **DevOps:** Docker, Kubernetes, Jenkins
 - **Cloud:** AWS, Google Cloud, Azure
@@ -31,7 +31,7 @@ A task management application with user authentication and CRUD functionality, d
 
 ## 📫 How to Reach Me
 
-- **Email:** (mailto:contactmuhammadidrees@gmail.com)
+- **Email:** [Email] (mailto:contactmuhammadidrees@gmail.com)
 - **LinkedIn:** [Muhammad Idrees Khan](https://www.linkedin.com/in/muhammad-idrees-khan-796558117/)
 - **Twitter:** [@Happyikhan](https://twitter.com/happyikhan)
 
