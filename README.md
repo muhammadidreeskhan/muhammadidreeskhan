@@ -1,7 +1,3 @@
-Sure, here's a sample GitHub README for your profile:
-
----
-
  ## Hi, I'm Muhammad Idrees Khan 👋
 
 Welcome to my GitHub profile! I'm a passionate software developer and technology enthusiast, keen on exploring new horizons and solving complex problems with innovative solutions. Below you'll find a snapshot of my skills, projects, and contributions.
@@ -35,9 +31,9 @@ A task management application with user authentication and CRUD functionality, d
 
 ## 📫 How to Reach Me
 
-- **Email:** [muhammadidreeskhan@example.com](mailto:muhammadidreeskhan@example.com)
-- **LinkedIn:** [Muhammad Idrees Khan](https://www.linkedin.com/in/muhammadidreeskhan/)
-- **Twitter:** [@idreeskhan](https://twitter.com/idreeskhan)
+- **Email:** (mailto:contactmuhammadidrees@gmail.com)
+- **LinkedIn:** [Muhammad Idrees Khan](https://www.linkedin.com/in/muhammad-idrees-khan-796558117/)
+- **Twitter:** [@Happyikhan](https://twitter.com/happyikhan)
 
 ## 👨‍💻 Open Source Contributions
 
@@ -64,7 +60,3 @@ I occasionally write articles about programming and technology. Check out my lat
 Did you know? The first computer virus was created in 1983. It's fascinating to see how far we've come in the field of cybersecurity since then!
 
 Thanks for visiting my profile! Feel free to explore my repositories and get in touch if you'd like to collaborate on a project.
-
----
-
-Feel free to customise it further as per your preference.
