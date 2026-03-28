@@ -1,7 +1,20 @@
 <div align="center">
 
 <!-- Header Banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0f0f,100:1a1a2e&height=120&section=header&text=Muhammad%20Idrees&fontColor=ffffff&fontSize=42&fontAlignY=65&desc=React%20%2F%20Next.js%20Developer%20%E2%80%94%20Karachi%2C%20Pakistan&descAlignY=85&descSize=16&descColor=888888" />
+<svg width="100%" height="120" viewBox="0 0 900 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f0f"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <clipPath id="wave-clip">
+      <path d="M0,0 L900,0 L900,90 Q675,120 450,95 Q225,70 0,100 Z"/>
+    </clipPath>
+  </defs>
+  <rect width="900" height="120" fill="url(#hgrad)" clip-path="url(#wave-clip)"/>
+  <text x="450" y="55" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="36" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">Muhammad Idrees</text>
+  <text x="450" y="78" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#888888" text-anchor="middle" letter-spacing="2">React / Next.js Developer — Karachi, Pakistan</text>
+</svg>
 
 <!-- Headline -->
 <h2>I turn under-positioned websites and product surfaces<br/>into premium front doors that win trust faster.</h2>
@@ -135,6 +148,17 @@ Design quality  +  Sharper messaging  +  Technical delivery  =  Work that earns 
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:0f0f0f&height=80&section=footer" />
+<svg width="100%" height="80" viewBox="0 0 900 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0f0f0f"/>
+    </linearGradient>
+    <clipPath id="footer-wave">
+      <path d="M0,20 Q225,0 450,25 Q675,50 900,20 L900,80 L0,80 Z"/>
+    </clipPath>
+  </defs>
+  <rect width="900" height="80" fill="url(#fgrad)" clip-path="url(#footer-wave)"/>
+</svg>
 
 </div>
